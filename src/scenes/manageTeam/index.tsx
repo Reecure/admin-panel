@@ -10,7 +10,7 @@ const ManageTeam = (props: Props) => {
   return (
     <div className="">
       <Header title="team" subTitle="Managing the Team Members" />
-      <div className="mt-10 grid grid-cols-[40px_40px_minmax(200px,_1fr)_80px_minmax(250px,_1fr)_minmax(250px,_1fr)_minmax(150px,_1fr)] p-3 justify-between bg-blueAccent-700 text-primary-100 rounded-t-lg">
+      <div className="overflow-auto mt-10 grid grid-cols-[40px_40px_minmax(200px,_1fr)_80px_minmax(250px,_1fr)_minmax(250px,_1fr)_minmax(150px,_1fr)] p-3 justify-between bg-blueAccent-700 text-primary-100 rounded-t-lg">
         <div>
           <input type="checkbox" name="" id="" />
         </div>

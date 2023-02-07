@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Container from "./components/Container";
 import { useAppDispatch, useAppSelector } from "./redux/hooks";
 import { selectTheme } from "./redux/ToggleThemeSlice/ToggleThemeSlice";
-import BarChart from "./scenes/barChart";
+import BarChartCopmp from "./scenes/barChart";
 import Calendar from "./scenes/calendar";
 import ContactsInformation from "./scenes/contactsInformation";
 import Dashboard from "./scenes/dashboard";
@@ -12,9 +12,9 @@ import GeographyChart from "./scenes/geographyChart";
 import Sidebar from "./scenes/global/Sidebar";
 import Topbar from "./scenes/global/Topbar";
 import InvoiceBalances from "./scenes/invoiceBalances";
-import LineChart from "./scenes/lineChart";
+import LineChartComp from "./scenes/lineChart";
 import ManageTeam from "./scenes/manageTeam";
-import PieChart from "./scenes/pieChart";
+import PieChartComp from "./scenes/pieChart";
 import ProfileForm from "./scenes/profileForm";
 
 function App() {
@@ -59,9 +59,9 @@ function App() {
           <Route path="/calendar" element={<Calendar />}></Route>
           <Route path="/faq" element={<Faq />}></Route>
 
-          <Route path="/barChart" element={<BarChart />}></Route>
-          <Route path="/pieChart" element={<PieChart />}></Route>
-          <Route path="/lineChart" element={<LineChart />}></Route>
+          <Route path="/barChart" element={<BarChartCopmp />}></Route>
+          <Route path="/pieChart" element={<PieChartComp />}></Route>
+          <Route path="/lineChart" element={<LineChartComp />}></Route>
           <Route path="/geographyChart" element={<GeographyChart />}></Route>
         </Routes>
       </main>

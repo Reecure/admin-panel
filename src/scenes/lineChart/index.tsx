@@ -1,9 +1,14 @@
 import React from "react";
 
-type Props = {};
+import { mockLineData as data } from "../../data/mockData";
+import { ResponsiveLine } from "@nivo/line";
 
-const LineChart = (props: Props) => {
-  return <div>LineChart</div>;
+const LineChartComp = () => {
+  return (
+    <>
+      <div className=""></div>
+    </>
+  );
 };
 
-export default LineChart;
+export default LineChartComp;

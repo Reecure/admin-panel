@@ -1,8 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 import toggleTheme from "./ToggleThemeSlice/ToggleThemeSlice";
+import contactsColumnsToggle from "./ContactsInformatioSlice/ContactsColumnsToggle";
+
 export const store = configureStore({
   reducer: {
     toggleTheme,
+    contactsColumnsToggle,
   },
 });
 

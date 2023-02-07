@@ -10,7 +10,7 @@ const Container: FC<Props> = ({ children }) => {
   const theme = useAppSelector(selectTheme);
   return (
     <div
-      className={`min-h-screen ${
+      className={` min-h-screen ${
         theme === "dark"
           ? "bg-primary-600 text-primary-100"
           : "bg-primary-100 text-primary-800"

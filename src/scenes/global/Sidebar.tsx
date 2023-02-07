@@ -16,6 +16,21 @@ import {
   BsFillHouseFill,
 } from "react-icons/bs";
 
+const dataSection = [
+  {
+    id: 1,
+    title: "Manage Team",
+  },
+  {
+    id: 2,
+    title: "Contacts Information",
+  },
+  {
+    id: 3,
+    title: "Invoices Balances",
+  },
+];
+
 type Props = {};
 
 const Sidebar = (props: Props) => {
@@ -34,10 +49,10 @@ const Sidebar = (props: Props) => {
         <h4 className="text-center font-bold">OG BUDA</h4>
         <h5 className="text-center text-greenAccent-600">VP Fancy Admin</h5>
       </div>
-      <div className="text-grey-400 mt-3 space-y-4 ">
+      <div className="text-grey-400 mt-3 space-y-4  ">
         <Link className="text-blueAccent-600" to="/">
-          <div className="flex space-x-4 ">
-            <span>
+          <div className="flex space-x-2 ">
+            <span className="ml-[12px]">
               <BsFillHouseFill />
             </span>
             <p className="-mt-1 ">Dashboard</p>
